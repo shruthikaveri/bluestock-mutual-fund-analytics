@@ -1,0 +1,176 @@
+BLUESTOCK MUTUAL FUND ANALYTICS PLATFORM
+DAY 2 - SQL ANALYTICAL QUERY RESULTS
+============================================================
+
+QUERY 1 - TOP 10 FUNDS BY 3-YEAR RETURN
+------------------------------------------------------------
+                                       scheme_name               fund_house  category  return_3yr_pct
+        SBI Small Cap Fund - Regular Plan - Growth          SBI Mutual Fund Small Cap           23.39
+         SBI Small Cap Fund - Direct Plan - Growth          SBI Mutual Fund Small Cap           23.14
+            ABSL Small Cap Fund - Regular - Growth Aditya Birla Sun Life MF Small Cap           22.38
+            Axis Small Cap Fund - Regular - Growth         Axis Mutual Fund Small Cap           20.98
+    Nippon India Small Cap Fund - Regular - Growth          Nippon India MF Small Cap           20.15
+             DSP Small Cap Fund - Regular - Growth          DSP Mutual Fund Small Cap           20.08
+     Kotak Emerging Equity Fund - Regular - Growth        Kotak Mahindra MF   Mid Cap           18.23
+          ICICI Pru Midcap Fund - Regular - Growth      ICICI Prudential MF   Mid Cap           18.08
+                DSP Midcap Fund - Regular - Growth          DSP Mutual Fund   Mid Cap           17.16
+HDFC Mid-Cap Opportunities Fund - Regular - Growth         HDFC Mutual Fund   Mid Cap           16.58
+
+QUERY 2 - TOP 10 FUNDS BY 5-YEAR RETURN
+------------------------------------------------------------
+                                       scheme_name               fund_house  category  return_5yr_pct
+            ABSL Small Cap Fund - Regular - Growth Aditya Birla Sun Life MF Small Cap           23.80
+            Axis Small Cap Fund - Regular - Growth         Axis Mutual Fund Small Cap           22.62
+    Nippon India Small Cap Fund - Regular - Growth          Nippon India MF Small Cap           21.88
+         SBI Small Cap Fund - Direct Plan - Growth          SBI Mutual Fund Small Cap           21.82
+        SBI Small Cap Fund - Regular Plan - Growth          SBI Mutual Fund Small Cap           20.67
+             DSP Small Cap Fund - Regular - Growth          DSP Mutual Fund Small Cap           20.61
+                DSP Midcap Fund - Regular - Growth          DSP Mutual Fund   Mid Cap           19.00
+               Axis Midcap Fund - Regular - Growth         Axis Mutual Fund   Mid Cap           18.94
+     Kotak Emerging Equity Fund - Regular - Growth        Kotak Mahindra MF   Mid Cap           17.75
+HDFC Mid-Cap Opportunities Fund - Regular - Growth         HDFC Mutual Fund   Mid Cap           17.69
+
+QUERY 3 - AVERAGE 3-YEAR RETURN BY FUND HOUSE
+------------------------------------------------------------
+              fund_house  average_3yr_return
+         DSP Mutual Fund               16.69
+         SBI Mutual Fund               15.25
+        Axis Mutual Fund               15.04
+         UTI Mutual Fund               14.35
+          Mirae Asset MF               14.32
+Aditya Birla Sun Life MF               13.77
+        HDFC Mutual Fund               13.49
+     ICICI Prudential MF               13.29
+       Kotak Mahindra MF               13.08
+         Nippon India MF               12.71
+
+QUERY 4 - CATEGORY-WISE PERFORMANCE
+------------------------------------------------------------
+       category  average_1yr_return  average_3yr_return  average_5yr_return
+      Small Cap               22.26               21.69               21.90
+        Mid Cap               15.98               16.59               17.52
+      Flexi Cap               16.59               15.50               14.64
+          Value               16.67               14.76               12.60
+Large & Mid Cap               14.91               14.56               15.68
+           ELSS               11.16               13.58               14.26
+      Large Cap               13.72               12.99               13.32
+          Index               13.76               12.10               11.31
+      Index/ETF               10.14               11.77               12.31
+ Short Duration                6.83                7.37                6.41
+         Liquid                6.44                6.33                8.05
+           Gilt                5.77                5.69                7.07
+
+QUERY 5 - TOP 10 FUNDS BY SHARPE RATIO
+------------------------------------------------------------
+                                         scheme_name               fund_house  return_3yr_pct  sharpe_ratio risk_grade
+            ICICI Pru Liquid Fund - Regular - Growth      ICICI Prudential MF            7.68          7.68        Low
+                Kotak Liquid Fund - Regular - Growth        Kotak Mahindra MF            6.18          6.18        Low
+                 ABSL Liquid Fund - Regular - Growth Aditya Birla Sun Life MF            5.14          5.14        Low
+        HDFC Short Term Debt Fund - Regular - Growth         HDFC Mutual Fund            7.37          1.84        Low
+        SBI Magnum Gilt Fund - Regular Plan - Growth          SBI Mutual Fund            6.07          1.52        Low
+Nippon India Gilt Securities Fund - Regular - Growth          Nippon India MF            5.31          1.33        Low
+           HDFC Top 100 Fund - Regular Plan - Growth         HDFC Mutual Fund           14.84          1.06   Moderate
+       Mirae Asset Large Cap Fund - Regular - Growth           Mirae Asset MF           14.81          1.06   Moderate
+           ICICI Pru Bluechip Fund - Direct - Growth      ICICI Prudential MF           14.41          1.03   Moderate
+      Nippon India Large Cap Fund - Regular - Growth          Nippon India MF           14.00          1.00   Moderate
+
+QUERY 6 - TRANSACTION AMOUNT BY TYPE
+------------------------------------------------------------
+transaction_type  total_transactions  total_amount_inr  average_transaction_amount
+         Lumpsum                8095        2059821448                   254456.02
+      Redemption                4967        1244525491                   250558.79
+             Sip               19716         217233491                    11018.13
+
+QUERY 7 - TOP 10 STATES BY INVESTMENT
+------------------------------------------------------------
+         state  total_transactions  total_investment_inr
+        Punjab                2965             315780459
+    Tamil Nadu                2806             315177237
+Madhya Pradesh                2931             308312493
+     Rajasthan                2577             298645822
+       Gujarat                2780             298358940
+   West Bengal                2748             297182514
+     Telangana                2718             290219284
+         Delhi                2677             289633404
+ Uttar Pradesh                2695             285368873
+       Haryana                2736             279634354
+
+QUERY 8 - MONTHLY TRANSACTION TREND
+------------------------------------------------------------
+transaction_month  total_transactions  total_amount_inr
+          2024-01                1949         217648305
+          2024-02                1861         193889416
+          2024-03                1974         213453498
+          2024-04                1952         208503874
+          2024-05                1901         205126352
+          2024-06                1989         222265329
+          2024-07                1968         197732026
+          2024-08                1985         227805125
+          2024-09                1833         188561816
+          2024-10                1957         213651354
+          2024-11                1863         196930490
+          2024-12                1978         215065667
+          2025-01                2020         206644171
+          2025-02                1754         182923366
+          2025-03                1973         219667398
+          2025-04                1859         208057871
+          2025-05                1962         203654372
+
+QUERY 9 - LATEST NAV FOR EACH FUND
+------------------------------------------------------------
+ amfi_code                                           scheme_name       date       nav
+    120844                  Kotak Liquid Fund - Regular - Growth 2026-05-29 4268.5497
+    125497              HDFC Top 100 Fund - Direct Plan - Growth 2026-05-29 1204.9571
+    101206         ABSL Frontline Equity Fund - Regular - Growth 2026-05-29  773.2939
+    149322            DSP Top 100 Equity Fund - Regular - Growth 2026-05-29  606.2349
+    100016             HDFC Top 100 Fund - Regular Plan - Growth 2026-05-29  583.6113
+    120841                Kotak Bluechip Fund - Regular - Growth 2026-05-29  482.1270
+    120505              ICICI Pru Midcap Fund - Regular - Growth 2026-05-29  473.7640
+    101208                   ABSL Liquid Fund - Regular - Growth 2026-05-29  410.1021
+    120506     ICICI Pru Value Discovery Fund - Regular - Growth 2026-05-29  404.4207
+    120507              ICICI Pru Liquid Fund - Regular - Growth 2026-05-29  388.5939
+    102887                 UTI Flexi Cap Fund - Regular - Growth 2026-05-29  378.9657
+    100033    HDFC Mid-Cap Opportunities Fund - Regular - Growth 2026-05-29  342.0072
+    118635                        Nippon India ETF Nifty 50 BeES 2026-05-29  326.7508
+    119598            SBI Small Cap Fund - Regular Plan - Growth 2026-05-29  309.2050
+    149324                 DSP Small Cap Fund - Regular - Growth 2026-05-29  279.7511
+    149323                    DSP Midcap Fund - Regular - Growth 2026-05-29  245.3651
+    148567         Mirae Asset Large Cap Fund - Regular - Growth 2026-05-29  230.2708
+    148568 Mirae Asset Emerging Bluechip Fund - Regular - Growth 2026-05-29  205.4510
+    119094                   Axis Midcap Fund - Regular - Growth 2026-05-29  203.8581
+    125498     HDFC Mid-Cap Opportunities Fund - Direct - Growth 2026-05-29  188.3619
+    102885            UTI Nifty 50 Index Fund - Regular - Growth 2026-05-29  187.7797
+    120843                Kotak Flexicap Fund - Regular - Growth 2026-05-29  163.2397
+    120504             ICICI Pru Bluechip Fund - Direct - Growth 2026-05-29  151.1311
+    119551             SBI Bluechip Fund - Regular Plan - Growth 2026-05-29  149.3216
+    119552              SBI Bluechip Fund - Direct Plan - Growth 2026-05-29  137.7323
+    118634        Nippon India Small Cap Fund - Regular - Growth 2026-05-29  134.6683
+    102886                   UTI Mid Cap Fund - Regular - Growth 2026-05-29  125.5640
+    120503            ICICI Pru Bluechip Fund - Regular - Growth 2026-05-29  118.1496
+    118632        Nippon India Large Cap Fund - Regular - Growth 2026-05-29  110.5554
+    119599             SBI Small Cap Fund - Direct Plan - Growth 2026-05-29  105.4849
+    148569         Mirae Asset Tax Saver Fund - Regular - Growth 2026-05-29   97.7435
+    118633         Nippon India Large Cap Fund - Direct - Growth 2026-05-29   91.6010
+    120842         Kotak Emerging Equity Fund - Regular - Growth 2026-05-29   82.6457
+    119093                  Axis Bluechip Fund - Direct - Growth 2026-05-29   58.4203
+    119095                Axis Small Cap Fund - Regular - Growth 2026-05-29   56.1319
+    119120          SBI Magnum Gilt Fund - Regular Plan - Growth 2026-05-29   54.2038
+    101207                ABSL Small Cap Fund - Regular - Growth 2026-05-29   53.9836
+    119092                 Axis Bluechip Fund - Regular - Growth 2026-05-29   50.8387
+    118636  Nippon India Gilt Securities Fund - Regular - Growth 2026-05-29   37.8243
+    100025          HDFC Short Term Debt Fund - Regular - Growth 2026-05-29   31.8843
+
+QUERY 10 - FUND HOUSE-WISE TOTAL AUM
+------------------------------------------------------------
+              fund_house latest_available_date  latest_aum_lakh_crore  latest_aum_crore  number_of_schemes
+         SBI Mutual Fund            2025-12-31                  12.50           1250000                186
+     ICICI Prudential MF            2025-12-31                  10.74           1074000                216
+        HDFC Mutual Fund            2025-12-31                   9.30            930000                195
+         Nippon India MF            2025-12-31                   7.00            700000                177
+       Kotak Mahindra MF            2025-12-31                   5.80            580000                168
+Aditya Birla Sun Life MF            2025-12-31                   4.60            460000                199
+         UTI Mutual Fund            2025-12-31                   4.10            410000                142
+        Axis Mutual Fund            2025-12-31                   3.50            350000                 95
+          Mirae Asset MF            2025-12-31                   2.90            290000                 56
+         DSP Mutual Fund            2025-12-31                   2.30            230000                 88
+
