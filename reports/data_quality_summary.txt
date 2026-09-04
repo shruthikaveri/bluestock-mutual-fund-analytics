@@ -1,0 +1,48 @@
+BLUESTOCK MUTUAL FUND ANALYTICS PLATFORM
+DAY 1 - DATA QUALITY SUMMARY
+
+1. DATASETS LOADED
+Total CSV datasets loaded: 10
+
+2. MISSING VALUE CHECK
+Most datasets contain no missing values.
+
+Dataset with missing values:
+04_monthly_sip_inflows.csv
+
+Column:
+yoy_growth_pct
+
+Missing values:
+12
+
+Possible reason:
+The Year-on-Year growth percentage may not be available for the initial 12 months because comparison data from the previous year may not exist.
+
+3. AMFI CODE VALIDATION
+
+Total unique AMFI codes in Fund Master: 40
+Total unique AMFI codes in NAV History: 40
+
+Missing AMFI codes: 0
+
+Result:
+Every AMFI code available in Fund Master exists in NAV History.
+
+4. NAV HISTORY VALIDATION
+
+Minimum NAV records per AMFI code: 1150
+Maximum NAV records per AMFI code: 1150
+
+Result:
+All 40 schemes have an equal number of NAV history records.
+
+5. OVERALL DATA QUALITY RESULT
+
+The datasets were successfully loaded and inspected.
+
+The AMFI code relationship between Fund Master and NAV History is valid.
+
+The only missing values identified were 12 values in the yoy_growth_pct column of the Monthly SIP Inflows dataset.
+
+The data is suitable for further cleaning, exploratory analysis, SQL analysis, and dashboard development.
